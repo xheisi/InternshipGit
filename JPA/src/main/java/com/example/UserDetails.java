@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "booking")
+@Table(name = "user_details")
 @Getter
 @Setter
 
@@ -17,6 +17,9 @@ public class UserDetails {
     private String lastName;
     private String email;
     private int phoneNumber;
-    private int userId;
 
+    //•	Tables user and user_details should have a One to One relationship
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }
