@@ -1,36 +1,36 @@
 package com.example;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
 public class App {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example-pu");
         EntityManager em = emf.createEntityManager();
 
+        EntityTransaction transaction = em.getTransaction();
+
         // CREATE
-        em.getTransaction().begin();
+        transaction.begin();
         User user = new User();
         user.setUsername("xheisi");
         user.setPassword("1234");
         user.setRole("admin");
         em.persist(user);
-        em.getTransaction().commit();
+        transaction.commit();
 
         // READ
         User found = em.find(User.class, user.getId());
         System.out.println("Found: " + found.getUsername());
 
         // UPDATE
-        em.getTransaction().begin();
+        transaction.begin();
         found.setRole("superadmin");
         em.merge(found);
-        em.getTransaction().commit();
+        transaction.commit();
 
         /*
-        em.getTransaction().begin();
+        transaction.begin();
         em.remove(found);
-        em.getTransaction().commit();*/
+        transaction.commit();*/
 
         em.close();
         emf.close();
