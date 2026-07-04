@@ -9,9 +9,6 @@ public class SpringBasicsApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(SpringBasicsApplication.class, args);
-
-        EmailNotificationService en = new EmailNotificationService();
-        en.send("EmailNotificationService");
     }
 
 
