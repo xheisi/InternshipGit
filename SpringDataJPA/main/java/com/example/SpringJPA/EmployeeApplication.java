@@ -4,19 +4,24 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Scanner;
 
 @SpringBootApplication
-
 public class EmployeeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeApplication.class, args);
 	}
+
 	@Bean
-    CommandLineRunner commandLineRunner(EmployeeRepository repository) {
+	CommandLineRunner commandLineRunner(EmployeeRepository repository) {
 		return args -> {
 			Scanner scanner = new Scanner(System.in);
 			while (true) {
@@ -35,52 +40,41 @@ public class EmployeeApplication {
 					case 1 -> {
 						System.out.print("Department: ");
 						String department = scanner.nextLine();
-						// TODO:
-						System.out.println("Departments:" + repository.findByDepartment(department));
-
-// Execute the repository method that finds
-// employees by department and print the results.
+						List<Employee> employees = repository.findByDepartment(department);
+						printEmployees(employees);
 					}
 					case 2 -> {
 						System.out.print("Minimum salary: ");
 						BigDecimal salary = new BigDecimal(scanner.nextLine());
-						// TODO:
-// Execute the repository method that finds
-// employees with salary greater than the given value
-// and print the results.
+						List<Employee> employees = repository.findBySalaryGreaterThan(salary);
+						printEmployees(employees);
 					}
 					case 3 -> {
 						System.out.print("Last name contains: ");
 						String text = scanner.nextLine();
-						// TODO:
-// Execute the repository method that finds
-// employees whose last name contains the given text
-// and print the results.
+						List<Employee> employees = repository.findByLastNameContaining(text);
+						printEmployees(employees);
 					}
 					case 4 -> {
 						System.out.print("Hire date (yyyy-MM-dd): ");
 						LocalDate hireDate = LocalDate.parse(scanner.nextLine());
-						// TODO:
-// Execute the JPQL query method that returns
-// employees hired after the given date.
+						List<Employee> employees = repository.findEmployeesHiredAfter(hireDate);
+						printEmployees(employees);
 					}
 					case 5 -> {
 						System.out.print("Minimum salary: ");
 						BigDecimal salary = new BigDecimal(scanner.nextLine());
-						// TODO:
-// Execute the native query that returns employees
-// whose salary is greater than the given value.
+						List<Employee> employees = repository.findEmployeesBySalaryGreaterThanNative(salary);
+						printEmployees(employees);
 					}
 					case 6 -> {
-						// TODO:
-// Retrieve the first page containing
-// 5 employees and print the results.
+						Pageable pageable = PageRequest.of(0, 5);
+						Page<Employee> page = repository.findAll(pageable);
+						printEmployees(page.getContent());
 					}
 					case 7 -> {
-						// TODO:
-// Retrieve all employees sorted
-// by salary in descending order
-// and print the results.
+						List<Employee> employees = repository.findAll(Sort.by(Sort.Direction.DESC, "salary"));
+						printEmployees(employees);
 					}
 					case 0 -> {
 						System.out.println("Goodbye!");
@@ -90,5 +84,13 @@ public class EmployeeApplication {
 				}
 			}
 		};
+	}
+
+	private void printEmployees(List<Employee> employees) {
+		if (employees.isEmpty()) {
+			System.out.println("No employees found.");
+			return;
+		}
+		employees.forEach(System.out::println);
 	}
 }

@@ -22,13 +22,12 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     // Find employees by department whose salary is greater than a given amount.
     List<Employee> findByDepartmentAndSalaryGreaterThan(String department, BigDecimal salary);
 
-    //Using JPQL and the @Query annotation, create a repository method that returns all employees hired
-    //after a given date.
+    // Task 4: JPQL - find employees hired after a given date.
     @Query("SELECT e FROM Employee e WHERE e.hireDate > :hireDate")
     List<Employee> findEmployeesHiredAfter(@Param("hireDate") LocalDate hireDate);
 
-    //Using a native SQL query, create a repository method that returns all employees whose salary is
-    //greater than a given amount.
-    //@Query(value = "SELECT * FROM Employee e WHERE e.salary > 'amount'")
+    // Task 5: Native SQL - find employees whose salary is greater than a given amount.
+    @Query(value = "SELECT * FROM employee WHERE salary > :salary", nativeQuery = true)
+    List<Employee> findEmployeesBySalaryGreaterThanNative(@Param("salary") BigDecimal salary);
 
 }
