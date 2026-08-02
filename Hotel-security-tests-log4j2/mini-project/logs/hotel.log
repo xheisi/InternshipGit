@@ -1,0 +1,58 @@
+2026-08-02 22:53:21 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-02 22:53:22 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-02 22:53:22 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-02 22:53:22 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-02 22:53:22 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-02 22:53:22 INFO  ApplicationTests               - Starting ApplicationTests using Java 23.0.1 with PID 20344 (started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-02 22:53:22 INFO  ApplicationTests               - No active profile set, falling back to 1 default profile: "default"
+2026-08-02 22:53:24 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-02 22:53:25 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132 ms. Found 6 JPA repository interfaces.
+2026-08-02 22:53:26 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-02 22:53:26 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-02 22:53:27 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-02 22:53:27 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-02 22:53:29 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41463c56
+2026-08-02 22:53:29 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-02 22:53:31 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-02 22:53:31 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-02 22:53:31 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-02 22:53:34 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-02 22:53:34 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-02 22:53:34 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-02 22:53:35 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-02 22:53:37 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-02 22:53:39 INFO  ApplicationTests               - Started ApplicationTests in 17.153 seconds (process running for 21.176)
+2026-08-02 22:53:41 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-02 22:53:41 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@1d5ada5a
+2026-08-02 22:53:41 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-02 22:53:41 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-02 22:53:42 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@15971523
+2026-08-02 22:53:42 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-02 22:53:42 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-02 22:53:42 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@593ec306
+2026-08-02 22:53:42 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-02 22:53:42 TRACE HotelService                   - Entering createHotel() — name=Runtime Hotel
+2026-08-02 22:53:42 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@76ce2e7
+2026-08-02 22:53:42 INFO  HotelService                   - Hotel created successfully — id=1, name='Runtime Hotel'
+2026-08-02 22:53:42 TRACE HotelService                   - Entering createHotel() — name=Grand Plaza
+2026-08-02 22:53:42 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@51768401
+2026-08-02 22:53:42 INFO  HotelService                   - Hotel created successfully — id=1, name='Grand Plaza'
+2026-08-02 22:53:42 TRACE HotelService                   - Entering findHotelOrThrow() — id=99
+2026-08-02 22:53:42 WARN  HotelService                   - Hotel not found — id=99
+2026-08-02 22:53:42 TRACE ReservationService             - Entering createReservation() — guestId=1, roomId=1
+2026-08-02 22:53:42 DEBUG ReservationService             - Validating reservation — dates 2026-08-02 to 2026-08-04, guests=1
+2026-08-02 22:53:42 ERROR ReservationService             - createReservation() failed — roomId=1 is under MAINTENANCE
+2026-08-02 22:53:42 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-02 22:53:42 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-02 22:53:42 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
