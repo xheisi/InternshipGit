@@ -1,8 +1,8 @@
 package com.lhind.service;
 
-import de.lhind.internship.mini.project.dto.GuestDTO;
-import de.lhind.internship.mini.project.entity.Guest;
-import de.lhind.internship.mini.project.repository.GuestRepository;
+import com.lhind.dto.GuestDTO;
+import com.lhind.entity.Guest;
+import com.lhind.repository.GuestRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

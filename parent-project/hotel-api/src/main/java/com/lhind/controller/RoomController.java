@@ -1,8 +1,8 @@
 package com.lhind.controller;
 
-import de.lhind.internship.mini.project.dto.RoomDTO;
-import de.lhind.internship.mini.project.entity.RoomStatus;
-import de.lhind.internship.mini.project.service.RoomService;
+import com.lhind.dto.RoomDTO;
+import com.lhind.entity.RoomStatus;
+import com.lhind.service.RoomService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

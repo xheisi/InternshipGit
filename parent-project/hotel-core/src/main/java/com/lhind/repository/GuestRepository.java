@@ -1,6 +1,6 @@
 package com.lhind.repository;
 
-import de.lhind.internship.mini.project.entity.Guest;
+import com.lhind.entity.Guest;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GuestRepository extends JpaRepository<Guest, Integer> {

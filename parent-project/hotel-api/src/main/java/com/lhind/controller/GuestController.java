@@ -1,9 +1,9 @@
 package com.lhind.controller;
 
-import de.lhind.internship.mini.project.dto.GuestDTO;
-import de.lhind.internship.mini.project.dto.GuestProfileDTO;
-import de.lhind.internship.mini.project.service.GuestProfileService;
-import de.lhind.internship.mini.project.service.GuestService;
+import com.lhind.dto.GuestDTO;
+import com.lhind.dto.GuestProfileDTO;
+import com.lhind.service.GuestProfileService;
+import com.lhind.service.GuestService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

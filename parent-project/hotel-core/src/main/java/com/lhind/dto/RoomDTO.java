@@ -1,6 +1,6 @@
 package com.lhind.dto;
-import de.lhind.internship.mini.project.entity.RoomStatus;
-import de.lhind.internship.mini.project.entity.RoomType;
+import com.lhind.entity.RoomStatus;
+import com.lhind.entity.RoomType;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.*;

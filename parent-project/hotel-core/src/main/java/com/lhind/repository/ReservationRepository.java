@@ -1,6 +1,6 @@
 package com.lhind.repository;
 
-import de.lhind.internship.mini.project.entity.Reservation;
+import com.lhind.entity.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -20,7 +20,7 @@ public interface ReservationRepository extends JpaRepository<Reservation, Intege
             SELECT COUNT(r)
             FROM Reservation r
             WHERE r.room.id = :roomId
-            AND r.status <> de.lhind.internship.mini.project.entity.ReservationStatus.CANCELLED
+            AND r.status <> com.lhind.entity.ReservationStatus.CANCELLED
             AND r.checkInDate < :checkOutDate
             AND r.checkOutDate > :checkInDate
             """)

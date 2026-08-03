@@ -1,7 +1,7 @@
 package com.lhind.service;
 
-import de.lhind.internship.mini.project.dto.MostReservedRoomDTO;
-import de.lhind.internship.mini.project.repository.ReservationRepository;
+import com.lhind.dto.MostReservedRoomDTO;
+import com.lhind.repository.ReservationRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,15 +1,15 @@
 package com.lhind.service;
 
-import de.lhind.internship.mini.project.dto.ReservationDTO;
-import de.lhind.internship.mini.project.entity.Guest;
-import de.lhind.internship.mini.project.entity.Reservation;
-import de.lhind.internship.mini.project.entity.ReservationStatus;
-import de.lhind.internship.mini.project.entity.Room;
-import de.lhind.internship.mini.project.entity.RoomStatus;
-import de.lhind.internship.mini.project.exception.RoomNotAvailableException;
-import de.lhind.internship.mini.project.repository.GuestRepository;
-import de.lhind.internship.mini.project.repository.ReservationRepository;
-import de.lhind.internship.mini.project.repository.RoomRepository;
+import com.lhind.dto.ReservationDTO;
+import com.lhind.entity.Guest;
+import com.lhind.entity.Reservation;
+import com.lhind.entity.ReservationStatus;
+import com.lhind.entity.Room;
+import com.lhind.entity.RoomStatus;
+import com.lhind.exception.RoomNotAvailableException;
+import com.lhind.repository.GuestRepository;
+import com.lhind.repository.ReservationRepository;
+import com.lhind.repository.RoomRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

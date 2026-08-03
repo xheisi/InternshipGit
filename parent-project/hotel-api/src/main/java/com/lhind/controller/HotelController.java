@@ -1,7 +1,7 @@
 package com.lhind.controller;
 
-import de.lhind.internship.mini.project.dto.HotelDTO;
-import de.lhind.internship.mini.project.service.HotelService;
+import com.lhind.dto.HotelDTO;
+import com.lhind.service.HotelService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

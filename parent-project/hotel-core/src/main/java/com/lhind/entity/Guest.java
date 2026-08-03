@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="guest")
+@Table(name="guests")
 @Getter
 @Setter
 public class Guest {

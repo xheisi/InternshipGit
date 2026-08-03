@@ -1,7 +1,7 @@
 package com.lhind.repository;
 
-import de.lhind.internship.mini.project.entity.Room;
-import de.lhind.internship.mini.project.entity.RoomStatus;
+import com.lhind.entity.Room;
+import com.lhind.entity.RoomStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

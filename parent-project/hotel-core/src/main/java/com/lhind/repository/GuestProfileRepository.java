@@ -1,6 +1,6 @@
 package com.lhind.repository;
 
-import de.lhind.internship.mini.project.entity.GuestProfile;
+import com.lhind.entity.GuestProfile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

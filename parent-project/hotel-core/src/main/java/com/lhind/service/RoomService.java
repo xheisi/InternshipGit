@@ -1,11 +1,11 @@
 package com.lhind.service;
 
-import de.lhind.internship.mini.project.dto.RoomDTO;
-import de.lhind.internship.mini.project.entity.Hotel;
-import de.lhind.internship.mini.project.entity.Room;
-import de.lhind.internship.mini.project.entity.RoomStatus;
-import de.lhind.internship.mini.project.repository.HotelRepository;
-import de.lhind.internship.mini.project.repository.RoomRepository;
+import com.lhind.dto.RoomDTO;
+import com.lhind.entity.Hotel;
+import com.lhind.entity.Room;
+import com.lhind.entity.RoomStatus;
+import com.lhind.repository.HotelRepository;
+import com.lhind.repository.RoomRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

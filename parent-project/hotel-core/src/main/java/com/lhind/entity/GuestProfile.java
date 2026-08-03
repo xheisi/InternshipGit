@@ -2,11 +2,11 @@ package com.lhind.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="guestProfile")
+@Table(name="guest_profile")
 @Getter
 @Setter
 public class GuestProfile {

@@ -1,6 +1,6 @@
 package com.lhind.repository;
 
-import de.lhind.internship.mini.project.entity.Hotel;
+import com.lhind.entity.Hotel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

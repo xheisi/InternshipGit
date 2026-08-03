@@ -1,8 +1,8 @@
 package com.lhind.controller;
 
-import de.lhind.internship.mini.project.dto.ReservationDTO;
-import de.lhind.internship.mini.project.entity.ReservationStatus;
-import de.lhind.internship.mini.project.service.ReservationService;
+import com.lhind.dto.ReservationDTO;
+import com.lhind.entity.ReservationStatus;
+import com.lhind.service.ReservationService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

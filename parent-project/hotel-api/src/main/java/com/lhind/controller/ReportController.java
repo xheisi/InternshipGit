@@ -1,7 +1,7 @@
 package com.lhind.controller;
 
-import de.lhind.internship.mini.project.dto.MostReservedRoomDTO;
-import de.lhind.internship.mini.project.service.ReportService;
+import com.lhind.dto.MostReservedRoomDTO;
+import com.lhind.service.ReportService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

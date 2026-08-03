@@ -2,8 +2,8 @@ package com.lhind;
 
 import net.sf.log4jdbc.sql.jdbcapi.DataSourceSpy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.boot.jdbc.autoconfigure.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,8 +17,8 @@ public class AppConfig {
     DataSourceProperties dataSourceProperties;
 
     @Bean
-    @ConfigurationProperties(prefix = DataSourceProperties.PREFIX)
-    DataSource realDataSource() {
+    @ConfigurationProperties(prefix = "spring.datasource")
+        DataSource realDataSource() {
         DataSource dataSource = DataSourceBuilder
                 .create(this.dataSourceProperties.getClassLoader())
                 .url(this.dataSourceProperties.getUrl())

@@ -1,8 +1,8 @@
 package com.lhind.service;
 
-import de.lhind.internship.mini.project.dto.HotelDTO;
-import de.lhind.internship.mini.project.entity.Hotel;
-import de.lhind.internship.mini.project.repository.HotelRepository;
+import com.lhind.dto.HotelDTO;
+import com.lhind.entity.Hotel;
+import com.lhind.repository.HotelRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
