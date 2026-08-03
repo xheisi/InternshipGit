@@ -129,16 +129,6 @@
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 
-		<!-- Explicit test-scope safety net: guarantees log4j-core (the
-             org.apache.logging.log4j.core.* package the tests use directly,
-             e.g. LoggerContext/LogEvent) is on the test classpath regardless
-             of how the starters above resolve. -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<scope>test</scope>
-		</dependency>
-
 		<!-- Mockito, explicit — not guaranteed to be bundled by the
              fine-grained test starters above the way the old single
              spring-boot-starter-test used to include it. -->

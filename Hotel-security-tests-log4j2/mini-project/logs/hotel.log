@@ -56,3 +56,834 @@
 2026-08-02 22:53:42 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-08-02 22:53:42 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
 2026-08-02 22:53:42 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 08:50:00 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 08:50:01 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 08:50:01 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 08:50:01 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 08:50:01 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 08:50:01 INFO  ApplicationTests               - Starting ApplicationTests using Java 23.0.1 with PID 20572 (started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 08:50:01 INFO  ApplicationTests               - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 08:50:03 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 08:50:03 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 6 JPA repository interfaces.
+2026-08-03 08:50:05 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 08:50:05 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 08:50:06 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 08:50:06 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 08:50:06 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72b53f27
+2026-08-03 08:50:06 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 08:50:06 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 08:50:06 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 08:50:07 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 08:50:09 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 08:50:09 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 08:50:09 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 08:50:09 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 08:50:11 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 08:50:13 INFO  ApplicationTests               - Started ApplicationTests in 12.594 seconds (process running for 15.883)
+2026-08-03 08:50:15 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 08:50:15 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@69676b9c
+2026-08-03 08:50:15 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:50:15 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 08:50:15 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@a0464ce
+2026-08-03 08:50:15 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:50:15 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:50:15 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@15971523
+2026-08-03 08:50:15 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:50:16 TRACE HotelService                   - Entering createHotel() — name=Runtime Hotel
+2026-08-03 08:50:16 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@17e9e99
+2026-08-03 08:50:16 INFO  HotelService                   - Hotel created successfully — id=1, name='Runtime Hotel'
+2026-08-03 08:50:16 TRACE HotelService                   - Entering createHotel() — name=Grand Plaza
+2026-08-03 08:50:16 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@7bd03562
+2026-08-03 08:50:16 INFO  HotelService                   - Hotel created successfully — id=1, name='Grand Plaza'
+2026-08-03 08:50:16 TRACE HotelService                   - Entering findHotelOrThrow() — id=99
+2026-08-03 08:50:16 WARN  HotelService                   - Hotel not found — id=99
+2026-08-03 08:50:16 TRACE ReservationService             - Entering createReservation() — guestId=1, roomId=1
+2026-08-03 08:50:16 DEBUG ReservationService             - Validating reservation — dates 2026-08-03 to 2026-08-05, guests=1
+2026-08-03 08:50:16 ERROR ReservationService             - createReservation() failed — roomId=1 is under MAINTENANCE
+2026-08-03 08:50:16 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 08:50:16 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 08:50:16 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 08:54:10 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 08:54:10 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 08:54:10 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 08:54:10 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 08:54:11 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 08:54:11 INFO  ApplicationTests               - Starting ApplicationTests using Java 23.0.1 with PID 6120 (started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 08:54:11 INFO  ApplicationTests               - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 08:54:13 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 08:54:14 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 6 JPA repository interfaces.
+2026-08-03 08:54:15 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 08:54:15 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 08:54:16 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 08:54:16 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 08:54:16 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1be4a7e3
+2026-08-03 08:54:16 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 08:54:16 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 08:54:16 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 08:54:17 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 08:54:19 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 08:54:19 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 08:54:19 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 08:54:19 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 08:54:21 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 08:54:23 INFO  ApplicationTests               - Started ApplicationTests in 12.784 seconds (process running for 16.641)
+2026-08-03 08:54:25 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 08:54:25 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@9a82ef
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:54:25 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 08:54:25 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@6d9f3b1f
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:54:25 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@3d376d9b
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 08:54:25 TRACE HotelService                   - Entering createHotel() — name=Runtime Hotel
+2026-08-03 08:54:25 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@52647605
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Runtime Hotel'
+2026-08-03 08:54:25 TRACE HotelService                   - Entering createHotel() — name=Grand Plaza
+2026-08-03 08:54:25 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@6f099f77
+2026-08-03 08:54:25 INFO  HotelService                   - Hotel created successfully — id=1, name='Grand Plaza'
+2026-08-03 08:54:25 TRACE HotelService                   - Entering findHotelOrThrow() — id=99
+2026-08-03 08:54:25 WARN  HotelService                   - Hotel not found — id=99
+2026-08-03 08:54:27 TRACE ReservationService             - Entering createReservation() — guestId=1, roomId=1
+2026-08-03 08:54:27 DEBUG ReservationService             - Validating reservation — dates 2026-08-03 to 2026-08-05, guests=1
+2026-08-03 08:54:27 ERROR ReservationService             - createReservation() failed — roomId=1 is under MAINTENANCE
+2026-08-03 08:54:27 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 08:54:27 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 08:54:27 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 09:01:58 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 09:01:58 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 09:01:58 INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.lhind.internship.mini.project.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-03 09:01:58 INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.lhind.internship.mini.project.Application for test class de.lhind.internship.mini.project.ApplicationTests
+2026-08-03 09:01:59 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 09:01:59 INFO  ApplicationTests               - Starting ApplicationTests using Java 23.0.1 with PID 12796 (started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 09:01:59 INFO  ApplicationTests               - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 09:02:01 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 09:02:01 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 167 ms. Found 6 JPA repository interfaces.
+2026-08-03 09:02:03 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 09:02:03 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 09:02:04 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 09:02:04 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 09:02:04 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1be4a7e3
+2026-08-03 09:02:04 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 09:02:04 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 09:02:04 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 09:02:04 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 09:02:06 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 09:02:06 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 09:02:07 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 09:02:07 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 09:02:09 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 09:02:10 INFO  ApplicationTests               - Started ApplicationTests in 12.219 seconds (process running for 16.192)
+2026-08-03 09:02:12 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 09:02:12 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@6241ef96
+2026-08-03 09:02:12 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 09:02:12 TRACE HotelService                   - Entering createHotel() — name=Test Hotel
+2026-08-03 09:02:12 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@3a4dea70
+2026-08-03 09:02:12 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 09:02:12 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 09:02:12 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@15cf663c
+2026-08-03 09:02:12 INFO  HotelService                   - Hotel created successfully — id=1, name='Test Hotel'
+2026-08-03 09:02:13 TRACE HotelService                   - Entering createHotel() — name=Runtime Hotel
+2026-08-03 09:02:13 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@7bb92a71
+2026-08-03 09:02:13 INFO  HotelService                   - Hotel created successfully — id=1, name='Runtime Hotel'
+2026-08-03 09:02:13 TRACE HotelService                   - Entering createHotel() — name=Grand Plaza
+2026-08-03 09:02:13 DEBUG HotelService                   - Creating hotel with data: de.lhind.internship.mini.project.dto.HotelDTO@4a100df
+2026-08-03 09:02:13 INFO  HotelService                   - Hotel created successfully — id=1, name='Grand Plaza'
+2026-08-03 09:02:13 TRACE HotelService                   - Entering findHotelOrThrow() — id=99
+2026-08-03 09:02:13 WARN  HotelService                   - Hotel not found — id=99
+2026-08-03 09:02:13 TRACE ReservationService             - Entering createReservation() — guestId=1, roomId=1
+2026-08-03 09:02:13 DEBUG ReservationService             - Validating reservation — dates 2026-08-03 to 2026-08-05, guests=1
+2026-08-03 09:02:13 ERROR ReservationService             - createReservation() failed — roomId=1 is under MAINTENANCE
+2026-08-03 09:02:13 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 09:02:13 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 09:02:13 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 09:40:56 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 09:40:56 INFO  Application                    - Starting Application using Java 23.0.1 with PID 19700 (C:\Users\User\Downloads\mini-project\mini-project\target\classes started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 09:40:56 INFO  Application                    - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 09:40:58 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 09:40:58 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 6 JPA repository interfaces.
+2026-08-03 09:40:59 INFO  TomcatWebServer                - Tomcat initialized with port 8080 (http)
+2026-08-03 09:40:59 INFO  Http11NioProtocol              - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-03 09:40:59 INFO  StandardService                - Starting service [Tomcat]
+2026-08-03 09:40:59 INFO  StandardEngine                 - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-03 09:40:59 INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2324 ms
+2026-08-03 09:40:59 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 09:40:59 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 09:41:00 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 09:41:00 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 09:41:00 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d6712b7
+2026-08-03 09:41:00 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 09:41:00 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 09:41:00 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 09:41:00 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 09:41:02 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 09:41:02 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 09:41:02 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 09:41:03 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 09:41:04 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 09:41:05 INFO  Http11NioProtocol              - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-03 09:41:05 WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-03 09:41:05 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 09:41:05 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 09:41:05 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 09:41:05 INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-03 09:41:05 ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-08-03 09:57:40 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 09:57:40 INFO  Application                    - Starting Application using Java 23.0.1 with PID 8260 (C:\Users\User\Downloads\mini-project\mini-project\target\classes started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 09:57:40 INFO  Application                    - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 09:57:42 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 09:57:42 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162 ms. Found 6 JPA repository interfaces.
+2026-08-03 09:57:44 INFO  TomcatWebServer                - Tomcat initialized with port 8080 (http)
+2026-08-03 09:57:44 INFO  Http11NioProtocol              - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-03 09:57:44 INFO  StandardService                - Starting service [Tomcat]
+2026-08-03 09:57:44 INFO  StandardEngine                 - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-03 09:57:44 INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4048 ms
+2026-08-03 09:57:45 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 09:57:45 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 09:57:46 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 09:57:46 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 09:57:46 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d08f85a
+2026-08-03 09:57:46 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 09:57:47 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 09:57:47 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 09:57:47 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 09:57:49 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 09:57:49 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 09:57:49 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 09:57:49 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 09:57:51 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 09:57:52 INFO  Http11NioProtocol              - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-03 09:57:53 INFO  TomcatWebServer                - Tomcat started on port 8080 (http) with context path '/'
+2026-08-03 09:57:53 INFO  Application                    - Started Application in 13.781 seconds (process running for 15.116)
+2026-08-03 09:58:27 INFO  [/]                            - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-03 09:58:27 INFO  DispatcherServlet              - Initializing Servlet 'dispatcherServlet'
+2026-08-03 09:58:27 INFO  DispatcherServlet              - Completed initialization in 3 ms
+2026-08-03 10:08:43 INFO  GracefulShutdown               - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-03 10:08:43 INFO  GracefulShutdown               - Graceful shutdown complete
+2026-08-03 10:08:43 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:08:43 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 10:08:43 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 10:09:15 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 10:09:15 INFO  Application                    - Starting Application using Java 23.0.1 with PID 16084 (C:\Users\User\Downloads\mini-project\mini-project\target\classes started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 10:09:15 INFO  Application                    - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 10:09:17 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 10:09:17 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 182 ms. Found 6 JPA repository interfaces.
+2026-08-03 10:09:19 INFO  TomcatWebServer                - Tomcat initialized with port 8080 (http)
+2026-08-03 10:09:19 INFO  Http11NioProtocol              - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-03 10:09:19 INFO  StandardService                - Starting service [Tomcat]
+2026-08-03 10:09:19 INFO  StandardEngine                 - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-03 10:09:19 INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3769 ms
+2026-08-03 10:09:20 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 10:09:20 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 10:09:21 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 10:09:21 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 10:09:21 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d6712b7
+2026-08-03 10:09:21 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 10:09:21 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 10:09:21 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 10:09:21 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 10:09:23 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 10:09:23 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:09:23 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 10:09:24 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 10:09:25 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 10:09:26 INFO  Http11NioProtocol              - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-03 10:09:26 INFO  TomcatWebServer                - Tomcat started on port 8080 (http) with context path '/'
+2026-08-03 10:09:26 INFO  Application                    - Started Application in 11.774 seconds (process running for 13.279)
+2026-08-03 10:10:42 INFO  [/]                            - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-03 10:10:42 INFO  DispatcherServlet              - Initializing Servlet 'dispatcherServlet'
+2026-08-03 10:10:42 INFO  DispatcherServlet              - Completed initialization in 3 ms
+2026-08-03 10:10:43 FATAL GlobalExceptionHandler         - Unhandled exception on POST /auth/login — application may be in an inconsistent state
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at de.lhind.internship.mini.project.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1856)
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2516)
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2126)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:765)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:196)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:266)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1888)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1270)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)
+	... 94 more
+2026-08-03 10:17:01 FATAL GlobalExceptionHandler         - Unhandled exception on POST /auth/login — application may be in an inconsistent state
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('e' (code 101)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at de.lhind.internship.mini.project.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('e' (code 101)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1856)
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2516)
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2126)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:765)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:196)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:266)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1888)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1270)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)
+	... 94 more
+2026-08-03 10:27:39 WARN  PoolBase                       - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73583166 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-08-03 10:31:02 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 10:31:02 INFO  Application                    - Starting Application using Java 23.0.1 with PID 20300 (C:\Users\User\Downloads\mini-project\mini-project\target\classes started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 10:31:02 INFO  Application                    - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 10:31:03 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 10:31:04 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 6 JPA repository interfaces.
+2026-08-03 10:31:05 INFO  TomcatWebServer                - Tomcat initialized with port 8080 (http)
+2026-08-03 10:31:05 INFO  Http11NioProtocol              - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-03 10:31:05 INFO  StandardService                - Starting service [Tomcat]
+2026-08-03 10:31:05 INFO  StandardEngine                 - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-03 10:31:05 INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2908 ms
+2026-08-03 10:31:06 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 10:31:06 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 10:31:07 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 10:31:07 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 10:31:07 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31204303
+2026-08-03 10:31:07 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 10:31:08 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 10:31:08 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 10:31:08 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 10:31:10 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 10:31:10 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:31:10 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 10:31:10 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 10:31:12 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 10:31:14 INFO  Http11NioProtocol              - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-03 10:31:14 INFO  TomcatWebServer                - Tomcat started on port 8080 (http) with context path '/'
+2026-08-03 10:31:14 INFO  Application                    - Started Application in 12.881 seconds (process running for 14.668)
+2026-08-03 10:31:22 INFO  [/]                            - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-03 10:31:22 INFO  DispatcherServlet              - Initializing Servlet 'dispatcherServlet'
+2026-08-03 10:31:22 INFO  DispatcherServlet              - Completed initialization in 2 ms
+2026-08-03 10:33:54 WARN  error                          - HHH000247: ErrorCode: 1146, SQLState: 42S02
+2026-08-03 10:33:54 WARN  error                          - Table 'hotel_db.hotel' doesn't exist
+2026-08-03 10:33:54 FATAL GlobalExceptionHandler         - Unhandled exception on GET /api/hotels — application may be in an inconsistent state
+org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [Table 'hotel_db.hotel' doesn't exist] [select h1_0.id,h1_0.star_rating,h1_0.address,h1_0.city,h1_0.name from hotel h1_0]; SQL [select h1_0.id,h1_0.star_rating,h1_0.address,h1_0.city,h1_0.name from hotel h1_0]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:156)
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:131)
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.translateExceptionIfPossible(HibernateExceptionTranslator.java:105)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:223)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:577)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:346)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:157)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy2/jdk.proxy2.$Proxy160.findAll(Unknown Source)
+	at de.lhind.internship.mini.project.service.HotelService.getAllHotels(HotelService.java:66)
+	at de.lhind.internship.mini.project.controller.HotelController.getAllHotels(HotelController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at de.lhind.internship.mini.project.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [Table 'hotel_db.hotel' doesn't exist] [select h1_0.id,h1_0.star_rating,h1_0.address,h1_0.city,h1_0.name from hotel h1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:292)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:188)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:422)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:349)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:143)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:136)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:484)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:411)
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:379)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153)
+	at org.hibernate.query.Query.getResultList(Query.java:121)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:412)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	... 98 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'hotel_db.hotel' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:269)
+	... 133 more
+2026-08-03 10:44:50 INFO  GracefulShutdown               - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-03 10:44:50 INFO  GracefulShutdown               - Graceful shutdown complete
+2026-08-03 10:44:51 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:44:51 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 10:44:51 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 10:45:26 INFO  Version                        - HV000001: Hibernate Validator 9.1.0.Final
+2026-08-03 10:45:26 INFO  Application                    - Starting Application using Java 23.0.1 with PID 1528 (C:\Users\User\Downloads\mini-project\mini-project\target\classes started by User in C:\Users\User\Downloads\mini-project\mini-project)
+2026-08-03 10:45:26 INFO  Application                    - No active profile set, falling back to 1 default profile: "default"
+2026-08-03 10:45:27 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-03 10:45:28 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 6 JPA repository interfaces.
+2026-08-03 10:45:29 INFO  TomcatWebServer                - Tomcat initialized with port 8080 (http)
+2026-08-03 10:45:29 INFO  Http11NioProtocol              - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-03 10:45:29 INFO  StandardService                - Starting service [Tomcat]
+2026-08-03 10:45:29 INFO  StandardEngine                 - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-03 10:45:29 INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2637 ms
+2026-08-03 10:45:29 INFO  jpa                            - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-03 10:45:29 INFO  core                           - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-03 10:45:30 INFO  SpringPersistenceUnitInfo      - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-03 10:45:30 INFO  HikariDataSource               - HikariPool-1 - Starting...
+2026-08-03 10:45:30 INFO  HikariPool                     - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@81a8898
+2026-08-03 10:45:30 INFO  HikariDataSource               - HikariPool-1 - Start completed.
+2026-08-03 10:45:30 WARN  core                           - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-03 10:45:30 WARN  deprecation                    - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-03 10:45:31 INFO  pooling                        - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hotel_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: hotel_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-03 10:45:32 INFO  core                           - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-03 10:45:32 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:45:33 INFO  QueryEnhancerFactories         - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-03 10:45:33 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-08-03 10:45:34 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-03 10:45:36 WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Failed to execute SQL script statement #10 of file [C:\Users\User\Downloads\mini-project\mini-project\target\classes\schema.sql]: CREATE TABLE guestProfile ( id BIGINT AUTO_INCREMENT PRIMARY KEY, guest_id BIGINT NOT NULL, address VARCHAR(255), date_of_birth DATE, nationality VARCHAR(100), preferred_language VARCHAR(50), CONSTRAINT uk_guest_profile_guest UNIQUE (guest_id), CONSTRAINT fk_guest_profile_guest FOREIGN KEY (guest_id) REFERENCES guest (id) ON DELETE CASCADE )
+2026-08-03 10:45:36 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-03 10:45:36 INFO  HikariDataSource               - HikariPool-1 - Shutdown initiated...
+2026-08-03 10:45:36 INFO  HikariDataSource               - HikariPool-1 - Shutdown completed.
+2026-08-03 10:45:36 INFO  StandardService                - Stopping service [Tomcat]
+2026-08-03 10:45:36 INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-03 10:45:36 ERROR SpringApplication              - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Failed to execute SQL script statement #10 of file [C:\Users\User\Downloads\mini-project\mini-project\target\classes\schema.sql]: CREATE TABLE guestProfile ( id BIGINT AUTO_INCREMENT PRIMARY KEY, guest_id BIGINT NOT NULL, address VARCHAR(255), date_of_birth DATE, nationality VARCHAR(100), preferred_language VARCHAR(50), CONSTRAINT uk_guest_profile_guest UNIQUE (guest_id), CONSTRAINT fk_guest_profile_guest FOREIGN KEY (guest_id) REFERENCES guest (id) ON DELETE CASCADE )
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at de.lhind.internship.mini.project.Application.main(Application.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #10 of file [C:\Users\User\Downloads\mini-project\mini-project\target\classes\schema.sql]: CREATE TABLE guestProfile ( id BIGINT AUTO_INCREMENT PRIMARY KEY, guest_id BIGINT NOT NULL, address VARCHAR(255), date_of_birth DATE, nationality VARCHAR(100), preferred_language VARCHAR(50), CONSTRAINT uk_guest_profile_guest UNIQUE (guest_id), CONSTRAINT fk_guest_profile_guest FOREIGN KEY (guest_id) REFERENCES guest (id) ON DELETE CASCADE )
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:293)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:159)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:120)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:109)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 18 more
+Caused by: java.sql.SQLException: Can't create table `hotel_db`.`guestprofile` (errno: 121 "Duplicate key on write or update")
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 more

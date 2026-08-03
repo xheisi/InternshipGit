@@ -16,12 +16,30 @@
     </Appenders>
 
     <Loggers>
-        <!-- covers EVERY class under service/, see explanation below -->
+        <!--
+            Covers EVERY class under service/ at once (HotelService, RoomService,
+            ReservationService, GuestService, GuestProfileService, ReportService)
+            because Log4j2 logger names are hierarchical: this matches this
+            package and everything under it. Change this one level to control
+            all six classes together.
+        -->
         <Logger name="de.lhind.internship.mini.project.service" level="TRACE" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>
         </Logger>
 
+        <!--
+            Dedicated entry for the exception package (GlobalExceptionHandler),
+            same reasoning as service above: gives it its own real LoggerConfig
+            instead of falling back to shared Root, so its level can be
+            controlled independently and test tooling can target it directly.
+        -->
+        <Logger name="de.lhind.internship.mini.project.exception" level="TRACE" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Everything else (controllers, security, Spring/Tomcat internals) falls back here -->
         <Root level="INFO">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>

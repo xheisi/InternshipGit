@@ -1,39 +1,39 @@
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS reservations;
-DROP TABLE IF EXISTS guest_profiles;
+DROP TABLE IF EXISTS guestProfile;
 DROP TABLE IF EXISTS rooms;
-DROP TABLE IF EXISTS guests;
-DROP TABLE IF EXISTS hotels;
+DROP TABLE IF EXISTS guest;
+DROP TABLE IF EXISTS hotel;
 SET FOREIGN_KEY_CHECKS = 1;
-CREATE TABLE hotels (
-                        id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                        name VARCHAR(150) NOT NULL,
-                        city VARCHAR(100) NOT NULL,
-                        address VARCHAR(255) NOT NULL,
-                        star_rating INTEGER NOT NULL,
-                        CONSTRAINT chk_hotel_star_rating
-                            CHECK (star_rating BETWEEN 1 AND 5)
+CREATE TABLE hotel (
+                       id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                       name VARCHAR(150) NOT NULL,
+                       city VARCHAR(100) NOT NULL,
+                       address VARCHAR(255) NOT NULL,
+                       star_rating INTEGER NOT NULL,
+                       CONSTRAINT chk_hotel_star_rating
+                           CHECK (star_rating BETWEEN 1 AND 5)
 );
-CREATE TABLE guests (
-                        id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                        first_name VARCHAR(100) NOT NULL,
-                        last_name VARCHAR(100) NOT NULL,
-                        email VARCHAR(150) NOT NULL,
-                        phone_number VARCHAR(50),
-                        CONSTRAINT uk_guest_email UNIQUE (email)
+CREATE TABLE guest (
+                       id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                       first_name VARCHAR(100) NOT NULL,
+                       last_name VARCHAR(100) NOT NULL,
+                       email VARCHAR(150) NOT NULL,
+                       phone_number VARCHAR(50),
+                       CONSTRAINT uk_guest_email UNIQUE (email)
 );
-CREATE TABLE guest_profiles (
-                                id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                                guest_id BIGINT NOT NULL,
-                                address VARCHAR(255),
-                                date_of_birth DATE,
-                                nationality VARCHAR(100),
-                                preferred_language VARCHAR(50),
-                                CONSTRAINT uk_guest_profile_guest UNIQUE (guest_id),
-                                CONSTRAINT fk_guest_profile_guest
-                                    FOREIGN KEY (guest_id)
-                                        REFERENCES guests (id)
-                                        ON DELETE CASCADE
+CREATE TABLE guestProfile (
+                              id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                              guest_id BIGINT NOT NULL,
+                              address VARCHAR(255),
+                              date_of_birth DATE,
+                              nationality VARCHAR(100),
+                              preferred_language VARCHAR(50),
+                              CONSTRAINT uk_guest_profile_guest UNIQUE (guest_id),
+                              CONSTRAINT fk_guest_profile_guest
+                                  FOREIGN KEY (guest_id)
+                                      REFERENCES guest (id)
+                                      ON DELETE CASCADE
 );
 CREATE TABLE rooms (
                        id BIGINT AUTO_INCREMENT PRIMARY KEY,
@@ -55,7 +55,7 @@ CREATE TABLE rooms (
                            UNIQUE (hotel_id, room_number),
                        CONSTRAINT fk_room_hotel
                            FOREIGN KEY (hotel_id)
-                               REFERENCES hotels (id)
+                               REFERENCES hotel (id)
                                ON DELETE CASCADE
 );
 CREATE TABLE reservations (
@@ -78,7 +78,7 @@ CREATE TABLE reservations (
                                   CHECK (status IN ('PENDING', 'CONFIRMED', 'CANCELLED')),
                               CONSTRAINT fk_reservation_guest
                                   FOREIGN KEY (guest_id)
-                                      REFERENCES guests (id),
+                                      REFERENCES guest (id),
                               CONSTRAINT fk_reservation_room
                                   FOREIGN KEY (room_id)
                                       REFERENCES rooms (id)
@@ -87,12 +87,12 @@ CREATE TABLE reservations (
 CREATE TABLE IF NOT EXISTS app_user (
                                         id INT AUTO_INCREMENT PRIMARY KEY,
                                         email VARCHAR(255) NOT NULL UNIQUE,
-                                        password VARCHAR(255) NOT NULL,
-                                        role VARCHAR(50) NOT NULL
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL
     );
 
 CREATE INDEX idx_hotel_city
-    ON hotels (city);
+    ON hotel (city);
 CREATE INDEX idx_room_hotel_status
     ON rooms (hotel_id, status);
 CREATE INDEX idx_reservation_guest
